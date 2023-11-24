@@ -19,16 +19,10 @@
 */
 
 import Route from "@ioc:Adonis/Core/Route";
+import "./routes/bitungapps";
+import "./routes/gwsapps";
+import "./routes/user";
 
-Route.post("/register", "AuthController.register");
-Route.post("/login", "AuthController.login");
-Route.get("/gwsapps", "GwsappsController.index");
-Route.get("/gwsapps/:id", "GwsappsController.show");
-Route.post("/gwsapps", "GwsappsController.store");
-Route.put("/gwsapps/:id", "GwsappsController.update");
-Route.delete("/gwsapps/:id", "GwsappsController.destroy");
-Route.get("/bitungapps", "BitungsController.index");
-Route.get("/bitungapps/:id", "BitungsController.show");
-Route.post("/bitungapps", "BitungsController.store");
-Route.put("/bitungapps/:id", "BitungsController.update");
-Route.delete("/bitungapps/:id", "BitungsController.destroy");
+// Route.get("/", async ({ view }) => {
+//   return view.render("welcome");
+// });
